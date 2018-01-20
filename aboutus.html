@@ -2,57 +2,172 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="font/css/font-awesome.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script> 
+    <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		.col-md-4{
              text-align: center;
-
 		}
 		.row{
 			background-color: grey;
 			margin:10px;
 		}
+		.widget1{
+			position: fixed;
+            margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+            width:50%;
+            left: 0;
+            right: 0;
+            display:inline block;
+            vertical-align:center;
+		}
+		p{
+			overflow:hidden;
+		}
 	</style>
 </head>
 <body>
-	
+<div id="myDIV1" class="widget1 row" style="display:none;background-color:#C0C0C0;z-index:1;">
+   
+   <div class="col-sm-4">
+  <center><p style="color:white;">Rogin Koshy</p>
+  <img src="images/dp1.jpg" class="img-responsive" alt="Rogin" style="border-radius:50%;height:100px;width:100px;"></center>
+ </div>
+ 
+  <div class="col-sm-8">
+   <p style="line-height: 20px;margin-top:20px;"> He hails from Mumbai, Maharashtra. He is currently in his second year of Enginnering from SVNIT Surat. He seeks to modernise and develop the virtual world so as to make the world easier to live in.</p>
+   <b>Technical Skills</b>
+  <ul>
+  	<li>C,C++</li>
+  	<li>Python</li>
+  	<li>HTML, CSS ,Javascript</li>
+    <li>PHP, MySQL</li>
+  </ul>
+  <br>
+  <p style="margin-top:25px;font-weight:bold;">Strengths</p>
+  <ul>
+  	<li>Strong speaking skills</li>
+  	<li>Good presentation skills</li>
+  </ul>
+  <p style="margin-top:25px;font-weight:bold;">Contact</p>
+       <a href="https://www.facebook.com/rogin.koshy" class="fa fa-facebook-square" style="color:blue;" target="_blank"></a>
+       <a href="https://twitter.com/Rogink13" class="fa fa-twitter" style="color:#0084b4;" target="_blank"></a>
+       <a href="" class="fa fa-google" style="color:red;" target="_blank"></a>
+       <br>
+   <button onclick="myFunction('1')" style="margin:10px;">Close</button>
+  </div>
+
+</div>
+
+
+<div id="myDIV2" class="widget1 row" style="display:none;background-color:#C0C0C0;z-index:1;">
+   
+   <div class="col-sm-4">
+  <center><p>Nisha Mansoori</p>
+  <img src="images/dp2.jpg" class="img-responsive" alt="Nisha" style="border-radius:50%;height:100px;width:100px;"></center>
+ </div>
+ 
+  <div class="col-sm-8">
+   <p style="line-height: 20px;margin-top:20px;">Nisha is from the place known for the culmination of myriad colours i.e Rajasthan. She is known for her skills in web development and design. She believes in working for a future rich in technology and advancement.</p>
+   <b>Technical Skills</b>
+  <ul>
+  	<li>C,C++</li>
+  	<li>HTML, CSS ,Javascript</li>
+    <li>PHP, MySQL</li>
+  </ul>
+  <br>
+  <p style="margin-top:25px;font-weight:bold;">Strengths</p>
+  <ul>
+  	<li>Strong speaking skills</li>
+  	<li>Good presentation skills</li>
+  </ul>
+  <p style="margin-top:25px;font-weight:bold;">Contact</p>
+        <a href="https://www.facebook.com/profile.php?id=100012370351569" class="fa fa-facebook-square" style="color:blue;" target="_blank"></a>
+        <a href="" class="fa fa-twitter" style="color:#0084b4;" target="_blank"></a>
+        <a href="" class="fa fa-google" style="color:red;" target="_blank"></a>
+        <br>
+   <button onclick="myFunction('2')" style="margin:10px;">Close</button>
+  </div>
+
+</div>
+
+
+
+	<div id="myDIV3" class="widget1 row" style="display:none;background-color:#C0C0C0;z-index:1;">
+   
+   <div class="col-sm-4">
+  <center><p>Shivangi Tanwar</p>
+  <img src="images/dp3.jpg" class="img-responsive" alt="Shivangi" style="border-radius:50%;height:100px;width:100px;"></center>
+ </div>
+ 
+  <div class="col-sm-8">
+   <p style="line-height: 20px;margin-top:20px;">Shivangi is from Delhi, the capital city of India. She is responsible for modifying and designing this site.</p>
+   <b>Technical Skills</b>
+  <ul>
+  	<li>C,C++</li>
+  	<li>HTML, CSS ,Javascript</li>
+    <li>PHP, MySQL</li>
+  </ul>
+  <br>
+  <p style="margin-top:25px;font-weight:bold;">Strengths</p>
+  <ul>
+  	<li>Strong speaking skills</li>
+  	<li>Good presentation skills</li>
+  </ul>
+  <p style="margin-top:25px;font-weight:bold;">Contact</p>
+        <a href="" class="fa fa-facebook-square" style="color:blue;" target="_blank"></a>
+        <a href="" class="fa fa-twitter" style="color:#0084b4;" target="_blank"></a>
+        <a href="" class="fa fa-google" style="color:red;" target="_blank"></a>
+        <br>
+   <button onclick="myFunction('3')" style="margin:10px;">Close</button>
+  </div>
+
+</div>
 	<div class="container">
-<div class="row">
- <div class="col-md-4">
- 	<img src="images/dp1.jpg" class="img-responsive" alt="Rogin" style="border-radius:50%;height:100px;width:100px;">
+<div class="row" class="rogue">
+ <div class="col-sm-4">
+ 	<center><p>Rogin Koshy</p>
+ 	<img src="images/dp1.jpg" class="img-responsive" alt="Rogin" style="border-radius:50%;height:100px;width:100px;"></center>
  </div>
   
-  <div class="col-md-8">
-  <p>Rogin Koshy</p>
-  <p>2nd Year</p> 
-  <p>SVNIT</p>
-
+  <div class="col-sm-8">
+   <p style="line-height: 20px;margin-top:50px;"> He hails from Mumbai, Maharashtra. He is currently in his second year of Enginnering from SVNIT Surat. He seeks to modernise and develop the virtual world so as to make the world easier to live in. </p>
+    <button onclick="myFunction('1')">View More</button>
   </div>
 </div>
 
 <div class="row">
-	 <div class="col-md-4" >
-	 	<img src="" class="img-responsive" alt="Nisha" style="border-radius:50%;height:100px;width:100px;">
+	 <div class="col-sm-4" >
+	 	<center><p>Nisha Mansoori</p>
+	 	<img src="images/dp2.jpg" class="img-responsive" alt="Nisha" style="border-radius:50%;height:100px;width:100px;"></center>
 	 </div>
-	  <div class="col-md-8">
-	  <p>Nisha Mansoori</p>
-  <p>2nd Year</p> 
-  <p>SVNIT</p>
+	  <div class="col-sm-8">
+	  
+  <p style="line-height:20px;margin-top:50px;">Nisha is from the place known for the culmination of myriad colours i.e Rajasthan. She is known for her skills in web development and design. She believes in working for a future rich in technology and advancement.</p> 
+  <button onclick="myFunction('2')">View More</button>
 	  </div>
 </div>
 <div class="row">
-	 <div class="col-md-4">
-	 	<img src="" class="img-responsive" alt="Shivangi" style="border-radius:50%;height:100px;width:100px;" >
+	 <div class="col-sm-4">
+	 	<center><p>Shivangi Tanwar</p>
+	 	<img src="images/dp3.jpg" class="img-responsive" alt="Shivangi" style="border-radius:50%;height:100px;width:100px;" ></center>
 	 </div>
-	  <div class="col-md-8">
-	 <p>Shivangi Tanwar</p>
-  <p>2nd Year</p> 
-  <p>SVNIT</p> 	
-	  </div>
+	  <div class="col-sm-8">
+	 
+  <p style="line-height:20px;margin-top:50px;">Shivangi is from Delhi, the capital city of India. She is responsible for modifying and designing this site. </p> 
+	 <button onclick="myFunction('3')">View More</button> 
+	</div>
 	</div>
 </div>
+
+
+
 
 </body>
 
